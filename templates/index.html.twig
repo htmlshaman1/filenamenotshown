@@ -1,0 +1,14 @@
+<html>
+<head>
+  {{ encore_entry_link_tags('app') }}
+</head>
+<body>
+{# % form_theme form with [
+    'bootstrap_4_layout.html.twig',
+] % #}
+  {{ form_start(form) }}
+  {{ form_widget(form.file) }}  
+  <input type="submit" class="btn btn-lg btn-primary">
+  {{ form_end(form)}}
+</body>
+</html>
